@@ -1,5 +1,4 @@
-import React from 'react'
-import { Paper, Stack, Typography } from '@mui/material'
+import { Stack, Typography } from '@mui/material'
 import AccountCard from './AccountCard'
 import TransactionTable from './TransactionTable'
 
@@ -7,7 +6,7 @@ const Dashboard = () => {
     return (
         <div>
             <Typography variant='h5' fontWeight={700}>
-                Welcome, Shubham!
+                Welcome, Shubham Mahulkar 👋🏻
             </Typography>
             <Typography variant='body1' color='textSecondary'>
                 Here’s your account overview

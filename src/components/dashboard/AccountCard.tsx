@@ -4,11 +4,12 @@ const AccountCard = () => {
     return (
         <div 
         style={{
-            boxShadow:'0px 0px 5px 2px #9d9d9d80',
             padding:"20px",
-            borderRadius:8,
+            borderRadius:20,
             marginTop:15,
+            color:'#fff',
             minWidth:400,
+            background: "linear-gradient(to bottom right, #6366f1)"
         }}
         >
             <Typography variant='caption'>SAVING ACCOUNT</Typography>
@@ -18,7 +19,7 @@ const AccountCard = () => {
             <Typography marginTop={2}>
                 Account No : 88997744556633
             </Typography>
-            <Typography marginTop={2}>
+            <Typography marginTop={2} variant='caption' >
                 Updated 2 hours ago
             </Typography>
         </div>
