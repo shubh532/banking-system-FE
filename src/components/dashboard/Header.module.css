@@ -1,0 +1,103 @@
+.headContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: transparent;
+  font-family: "Inter", sans-serif;
+}
+
+/* Left: Date */
+.dateSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #4c4f6b;
+  opacity: 0.9;
+}
+
+/* Center: Search bar */
+.searchBar {
+  display: flex;
+  align-items: center;
+  background: rgba(242, 242, 246, 0.8);
+  padding: 0.75rem;
+  border-radius: 12px;
+  width: 340px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 1px 1px #dfdede
+}
+
+.searchBar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: 0.5rem;
+  flex: 1;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.searchBar input::placeholder {
+  color: #75788b;
+}
+
+/* Right side: notification + profile */
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.iconButton {
+  background: rgba(242, 242, 246, 0.8);
+  box-shadow: 0px 0px 1px 1px #dfdede;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.iconButton:hover {
+  background: rgba(210, 212, 230, 0.9);
+}
+
+.profileBox {
+  display: flex;
+  align-items: center;
+  background: rgba(242, 242, 246, 0.8);
+  box-shadow: 0px 0px 1px 1px #dfdede;
+  padding: 0.4rem 0.75rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.profileInfo {
+  text-align: right;
+  margin-right: 0.75rem;
+}
+
+.profileName {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0;
+  color: #2c2e3a;
+}
+
+.profileRole {
+  font-size: 0.8rem;
+  margin: 0;
+  color: #75788b;
+}
+
+.profileAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}

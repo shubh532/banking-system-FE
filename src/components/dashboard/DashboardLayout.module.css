@@ -1,41 +1,70 @@
 .dblMainContainer {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(140deg, rgba(255, 255, 255, 0.95) 0%, rgba(195, 199, 220, 0.9) 100%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden; 
+  background: linear-gradient(
+    140deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(195, 199, 220, 0.9) 100%
+  );
 }
 
 .dblSidebarContainer {
-    width: 300px;
-    height: 100%;
-    color: #ffff;
-    padding: 1rem;
-    background: linear-gradient(140deg, rgba(62, 71, 163, 0.95) 0%, rgba(25, 34, 86, 0.9) 100%);
+  width: 300px;
+  height: 100%;
+  color: #fff;
+  padding: 1rem;
+  background: linear-gradient(
+    140deg,
+    rgba(62, 71, 163, 0.95) 0%,
+    rgba(25, 34, 86, 0.9) 100%
+  );
+  display: flex;
+  flex-direction: column;
 }
 
 .dbContentContainer {
-    flex: 1;
-    padding: 1rem
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
-.dblSidebarTitle {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 5px 15px;
-    border-radius: 8px;
-    overflow: hidden;
-    text-wrap: nowrap;
+.dbHeader {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 0.75rem 1rem;
+  background: #ffffff93;
+  transition: backdrop-filter 0.3s ease, background 0.5s ease;
 }
 
-.dblSidebarTitleIcon {
-    margin-right: 20px;
-    transition: font-size 0.3s ease, opacity 0.3s ease !important;
+.dbHeader.scrolled {
+  backdrop-filter: blur(10px);
+  background: transparent;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-.dblSidebarTitleText {
-    font-weight: 700 !important;
-    font-size: 1.25rem;
-    letter-spacing: 1px;
+
+.dbMainContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  scroll-behavior: smooth;
+}
+
+.dbMainContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dbMainContent::-webkit-scrollbar-thumb {
+  background-color: rgba(120, 120, 120, 0.4);
+  border-radius: 4px;
+}
+
+.dbMainContent::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(120, 120, 120, 0.6);
 }
