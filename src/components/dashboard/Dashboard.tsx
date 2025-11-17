@@ -1,6 +1,6 @@
 import {  Grid2, Stack, Typography } from '@mui/material'
 import AccountCard from './AccountCard'
-import TransactionTable from '../transactions/TransactionTable'
+import RecentTransactions from './RecentTransactions'
 import QuickActionsCard from './QuickActions'
 
 const Dashboard = () => {
@@ -36,7 +36,7 @@ const Dashboard = () => {
             </Stack>
             <Grid2 container spacing={2}>
                 <Grid2 size={{ xs: 8 }}>
-                    <TransactionTable />
+                    <RecentTransactions />
                 </Grid2>
                 <Grid2 size={{ xs: 4 }}>
                     <QuickActionsCard />
