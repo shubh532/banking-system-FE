@@ -1,6 +1,7 @@
-import { Stack, Typography } from '@mui/material'
+import {  Grid2, Stack, Typography } from '@mui/material'
 import AccountCard from './AccountCard'
-import TransactionTable from './TransactionTable'
+import TransactionTable from '../transactions/TransactionTable'
+import QuickActionsCard from './QuickActions'
 
 const Dashboard = () => {
     return (
@@ -33,7 +34,14 @@ const Dashboard = () => {
                     onAction={() => console.log('Activate now')}
                 />
             </Stack>
-            <TransactionTable />
+            <Grid2 container spacing={2}>
+                <Grid2 size={{ xs: 8 }}>
+                    <TransactionTable />
+                </Grid2>
+                <Grid2 size={{ xs: 4 }}>
+                    <QuickActionsCard />
+                </Grid2>
+            </Grid2>
         </div>
     )
 }

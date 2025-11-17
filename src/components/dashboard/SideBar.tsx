@@ -45,13 +45,13 @@ const Sidebar: React.FC = () => {
         <Box display="flex" alignItems="center" mb={4}>
           <Stack
             sx={{
-              bgcolor: "#717cf4ff",
-              width: 40,
-              height: 40,
+              bgcolor: "#515dddff",
+              width: 50,
+              height: 50,
               mr: 1.5,
               alignItems: "center",
               justifyContent: "center",
-              borderRadius: 2,
+              borderRadius: 4,
               boxShadow: "5px 5px 10px -5px #ffffff45",
             }}
           >
